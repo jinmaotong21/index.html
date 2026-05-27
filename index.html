@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Политика конфиденциальности / Privacy Policy — LubriTrade Industrial</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f0e0b;
+      --surface: #1a1814;
+      --border: #2e2b24;
+      --accent: #c8973a;
+      --accent-dim: #7a5a1f;
+      --text-primary: #e8e2d4;
+      --text-secondary: #9a9080;
+      --text-muted: #5a5448;
+      --mono: 'IBM Plex Mono', monospace;
+      --serif: 'Libre Baskerville', Georgia, serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    /* Header */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .brand-name {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .brand-sub {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    .doc-badge {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 2px;
+    }
+
+    /* Hero title block */
+    .page-hero {
+      margin-bottom: 3.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-title span {
+      color: var(--accent);
+    }
+
+    .page-subtitle {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .meta-label {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .meta-value {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+    }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: inline-flex;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 3rem;
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 0.5rem 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-right: 1px solid var(--border);
+    }
+
+    .lang-btn:last-child { border-right: none; }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+    }
+
+    .lang-btn:not(.active):hover {
+      background: var(--surface);
+      color: var(--text-secondary);
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 1.75rem 2rem;
+      margin-bottom: 3.5rem;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .toc-title {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      columns: 2;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .toc-list { columns: 1; }
+    }
+
+    .toc-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    .toc-list a {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .toc-list a::before {
+      content: attr(data-num);
+      color: var(--text-muted);
+      font-size: 0.6rem;
+      min-width: 1.4rem;
+    }
+
+    .toc-list a:hover { color: var(--accent); }
+
+    /* Sections */
+    .policy-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .policy-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-num {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--accent-dim);
+      letter-spacing: 0.1em;
+      min-width: 2.5rem;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .section-body p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .section-body p:last-child { margin-bottom: 0; }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.85rem;
+    }
+
+    .data-table th {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--accent-dim);
+      background: var(--surface);
+    }
+
+    .data-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+      font-size: 0.85rem;
+    }
+
+    .data-table tr:hover td {
+      background: rgba(200, 151, 58, 0.04);
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .highlight-box p {
+      margin: 0 !important;
+      font-size: 0.9rem !important;
+      color: var(--text-primary) !important;
+    }
+
+    /* Contact block */
+    .contact-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      border-radius: 3px;
+      margin-top: 1.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-row:last-child { border-bottom: none; }
+
+    .contact-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      min-width: 80px;
+      padding-top: 0.1rem;
+    }
+
+    .contact-value {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    /* Footer */
+    .site-footer {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+
+    .footer-rev {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+
+    /* Language content toggle */
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+
+    /* Smooth reveal */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .policy-section {
+      animation: fadeUp 0.5s ease both;
+    }
+
+    .policy-section:nth-child(1) { animation-delay: 0.05s; }
+    .policy-section:nth-child(2) { animation-delay: 0.1s; }
+    .policy-section:nth-child(3) { animation-delay: 0.15s; }
+    .policy-section:nth-child(4) { animation-delay: 0.2s; }
+    .policy-section:nth-child(5) { animation-delay: 0.25s; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-name">LubriTrade Industrial Supply</div>
+      <div class="brand-sub">Industrial Lubricants · Central Asia Export</div>
+    </div>
+    
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-subtitle">Data Protection & Lead Collection</div>
+    <h1 class="page-title">Политика<br><span>Конфиденциальности</span></h1>
+    </div>
+      <div class="meta-item">
+        <div class="meta-label">Последнее обновление</div>
+        <div class="meta-value"></div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Регион применения</div>
+        <div class="meta-value">KZ · UZ · TM · KG · TJ</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">Платформа</div>
+        <div class="meta-value">Facebook Lead Ads</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('ru')">RU 🇷🇺</button>
+    <button class="lang-btn" onclick="setLang('uz')">UZ 🇺🇿</button>
+    <button class="lang-btn" onclick="setLang('en')">EN 🌐</button>
+  </div>
+
+  <!-- ======================== RUSSIAN ======================== -->
+  <div data-lang="ru" class="visible">
+
+    <nav class="toc">
+      <div class="toc-title">Содержание</div>
+      <ul class="toc-list">
+        <li><a href="#ru-1" data-num="01">Кто мы</a></li>
+        <li><a href="#ru-2" data-num="02">Какие данные мы собираем</a></li>
+        <li><a href="#ru-3" data-num="03">Цели обработки данных</a></li>
+        <li><a href="#ru-4" data-num="04">Правовая основа</a></li>
+        <li><a href="#ru-5" data-num="05">Передача третьим лицам</a></li>
+        <li><a href="#ru-6" data-num="06">Хранение и защита</a></li>
+        <li><a href="#ru-7" data-num="07">Ваши права</a></li>
+        <li><a href="#ru-8" data-num="08">WhatsApp и мессенджеры</a></li>
+        <li><a href="#ru-9" data-num="09">Файлы cookie</a></li>
+        <li><a href="#ru-10" data-num="10">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <section class="policy-section" id="ru-1">
+      <div class="section-header">
+        <span class="section-num">01 —</span>
+        <h2 class="section-title">Кто мы и для чего эта политика</h2>
+      </div>
+      <div class="section-body">
+        <p>Настоящая Политика конфиденциальности распространяется на деятельность компании <strong>LubriTrade Industrial Supply</strong> («Компания», «мы», «нас») — поставщика промышленных смазочных материалов, моторных масел и технических жидкостей для корпоративных клиентов в Казахстане, Узбекистане, Туркменистане, Кыргызстане и Таджикистане.</p>
+        <p>Данная политика описывает, как мы собираем, обрабатываем и защищаем персональные данные, полученные через рекламные формы Facebook Lead Ads, WhatsApp Business и иные цифровые каналы, используемые в целях B2B-маркетинга смазочных материалов.</p>
+        <div class="highlight-box">
+          <p>Оставляя заявку через форму Facebook или нажимая кнопку «Связаться в WhatsApp», вы подтверждаете своё согласие с условиями настоящей политики и даёте согласие на обработку ваших данных в указанных целях.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-2">
+      <div class="section-header">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">Какие данные мы собираем</h2>
+      </div>
+      <div class="section-body">
+        <p>В рамках рекламных кампаний на Facebook мы можем собирать следующие категории данных:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Тип данных</th>
+              <th>Примеры</th>
+              <th>Источник</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Контактные данные</td>
+              <td>Имя, должность, номер телефона, WhatsApp, email</td>
+              <td>Форма Lead Ads</td>
+            </tr>
+            <tr>
+              <td>Данные о компании</td>
+              <td>Название компании, страна, отрасль, численность парка/предприятия</td>
+              <td>Форма Lead Ads</td>
+            </tr>
+            <tr>
+              <td>Коммерческие данные</td>
+              <td>Интересующие категории продукции, объём закупок, периодичность</td>
+              <td>Форма Lead Ads / переписка</td>
+            </tr>
+            <tr>
+              <td>Технические данные</td>
+              <td>IP-адрес, тип устройства, идентификатор рекламы Facebook</td>
+              <td>Facebook Pixel / автоматически</td>
+            </tr>
+            <tr>
+              <td>Данные переписки</td>
+              <td>Содержание сообщений в WhatsApp Business</td>
+              <td>WhatsApp Business</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Мы не собираем специальные категории персональных данных: сведения о состоянии здоровья, политических взглядах, вероисповедании или биометрические данные.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-3">
+      <div class="section-header">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">Цели обработки данных</h2>
+      </div>
+      <div class="section-body">
+        <p>Ваши данные обрабатываются исключительно в следующих коммерческих и операционных целях:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Цель</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Обработка запроса</td>
+              <td>Ответ на ваш запрос о поставке смазочных материалов, предоставление технических характеристик продукции (моторных масел, редукторных масел, гидравлических жидкостей и др.)</td>
+            </tr>
+            <tr>
+              <td>Подготовка коммерческого предложения</td>
+              <td>Формирование индивидуального предложения с учётом объёма закупок, требований к спецификации (API, ACEA, ISO VG) и условий поставки (FOB, CIP, DAP)</td>
+            </tr>
+            <tr>
+              <td>Отправка образцов</td>
+              <td>Организация отправки технических образцов продукции потенциальным клиентам</td>
+            </tr>
+            <tr>
+              <td>CRM и сопровождение сделки</td>
+              <td>Фиксация данных в системе управления клиентами для последующей коммуникации и заключения договора поставки</td>
+            </tr>
+            <tr>
+              <td>Маркетинговые коммуникации</td>
+              <td>Рассылка актуальных прайс-листов, технических бюллетеней и информации о новых продуктах — только при наличии вашего согласия</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Мы не используем ваши данные для автоматизированного принятия решений или профилирования в ущерб вашим законным интересам.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-4">
+      <div class="section-header">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">Правовая основа обработки</h2>
+      </div>
+      <div class="section-body">
+        <p>Обработка ваших персональных данных осуществляется на следующих правовых основаниях:</p>
+        <p><strong>Согласие субъекта данных</strong> — добровольное заполнение формы Lead Ads является выражением вашего явного согласия на обработку данных. Согласие может быть отозвано в любое время.</p>
+        <p><strong>Законный интерес</strong> — обработка необходима для реализации законных коммерческих интересов Компании в части развития деловых отношений с потенциальными B2B-партнёрами.</p>
+        <p><strong>Преддоговорные действия</strong> — обработка необходима для выполнения действий по запросу субъекта данных до заключения договора поставки.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-5">
+      <div class="section-header">
+        <span class="section-num">05 —</span>
+        <h2 class="section-title">Передача данных третьим лицам</h2>
+      </div>
+      <div class="section-body">
+        <p>Мы не продаём, не сдаём в аренду и не раскрываем ваши персональные данные третьим лицам, за исключением следующих случаев:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Получатель</th>
+              <th>Цель передачи</th>
+              <th>Гарантии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Meta Platforms (Facebook)</td>
+              <td>Обработка форм Lead Ads в соответствии с политикой Meta</td>
+              <td>Условия Meta Business Tools</td>
+            </tr>
+            <tr>
+              <td>WhatsApp / Meta</td>
+              <td>Доставка сообщений через WhatsApp Business API</td>
+              <td>Политика конфиденциальности WhatsApp</td>
+            </tr>
+            <tr>
+              <td>CRM-провайдер</td>
+              <td>Хранение данных о сделках и клиентах</td>
+              <td>Договор обработки данных (DPA)</td>
+            </tr>
+            <tr>
+              <td>Логистические партнёры</td>
+              <td>Организация доставки образцов продукции</td>
+              <td>Только необходимые данные (ФИО, адрес)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Все третьи лица, которым могут быть переданы данные, обязаны соблюдать применимые нормы защиты персональных данных.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-6">
+      <div class="section-header">
+        <span class="section-num">06 —</span>
+        <h2 class="section-title">Сроки хранения и защита данных</h2>
+      </div>
+      <div class="section-body">
+        <p><strong>Срок хранения:</strong> Персональные данные хранятся в течение 3 (трёх) лет с момента последнего взаимодействия или до момента отзыва согласия — в зависимости от того, что наступит раньше. Данные, связанные с заключёнными договорами поставки, хранятся в течение 5 (пяти) лет в соответствии с требованиями бухгалтерского и налогового законодательства.</p>
+        <p><strong>Технические меры защиты:</strong> Мы применяем SSL/TLS шифрование при передаче данных, ограниченный доступ к базам данных на основе принципа минимальных привилегий, регулярный аудит безопасности систем хранения данных, а также двухфакторную аутентификацию для сотрудников, имеющих доступ к персональным данным.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-7">
+      <div class="section-header">
+        <span class="section-num">07 —</span>
+        <h2 class="section-title">Ваши права как субъекта данных</h2>
+      </div>
+      <div class="section-body">
+        <p>В соответствии с применимым законодательством о защите персональных данных вы имеете право:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Право</th>
+              <th>Содержание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Право на доступ</td>
+              <td>Получить подтверждение факта обработки и копию ваших персональных данных</td>
+            </tr>
+            <tr>
+              <td>Право на исправление</td>
+              <td>Потребовать исправления неточных или устаревших данных</td>
+            </tr>
+            <tr>
+              <td>Право на удаление</td>
+              <td>Потребовать удаления данных («право на забвение»)</td>
+            </tr>
+            <tr>
+              <td>Право на отзыв согласия</td>
+              <td>В любой момент отозвать ранее данное согласие без ущерба для законности предшествующей обработки</td>
+            </tr>
+            <tr>
+              <td>Право на ограничение</td>
+              <td>Потребовать ограничения обработки в предусмотренных законом случаях</td>
+            </tr>
+            <tr>
+              <td>Право на переносимость</td>
+              <td>Получить свои данные в структурированном, машиночитаемом формате</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Для реализации любого из указанных прав направьте запрос на контактный email, указанный в разделе 10. Срок ответа — не более 30 рабочих дней.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-8">
+      <div class="section-header">
+        <span class="section-num">08 —</span>
+        <h2 class="section-title">WhatsApp и мессенджеры</h2>
+      </div>
+      <div class="section-body">
+        <p>При нажатии кнопки «Связаться в WhatsApp» в рекламном объявлении Facebook вы инициируете переписку через WhatsApp Business. Содержание переписки (запросы на поставку смазочных материалов, спецификации, коммерческие условия) фиксируется и хранится в системе WhatsApp Business и нашей CRM в целях обслуживания сделки.</p>
+        <div class="highlight-box">
+          <p>Мы не используем данные переписки в WhatsApp для рекламных рассылок без вашего явного согласия. Вы можете в любой момент прекратить переписку, написав «СТОП» или «ОТПИСАТЬСЯ».</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-9">
+      <div class="section-header">
+        <span class="section-num">09 —</span>
+        <h2 class="section-title">Facebook Pixel и файлы cookie</h2>
+      </div>
+      <div class="section-body">
+        <p>На нашем сайте и в рекламных материалах может использоваться инструмент Facebook Pixel для отслеживания взаимодействий с рекламой (просмотров, кликов, заполнений форм) в целях оптимизации рекламных кампаний и построения похожих аудиторий (Lookalike Audiences) из потенциальных B2B-клиентов в сфере смазочных материалов.</p>
+        <p>Вы можете управлять настройками рекламы на Facebook через раздел «Настройки рекламы» в вашем аккаунте Facebook. Для отказа от отслеживания по всей сети посетите <strong>aboutads.info</strong> или <strong>youronlinechoices.com</strong>.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="ru-10">
+      <div class="section-header">
+        <span class="section-num">10 —</span>
+        <h2 class="section-title">Контактные данные</h2>
+      </div>
+      <div class="section-body">
+        <p>По всем вопросам, связанным с обработкой персональных данных, а также для реализации ваших прав обращайтесь:</p>
+        <div class="contact-block">
+          <div class="contact-row">
+            <div class="contact-label">Компания</div>
+            <div class="contact-value">LubriTrade Industrial Supply</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">privacy@lubritrade.com</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-value">+86 XXX XXXX XXXX</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Telegram</div>
+            <div class="contact-value">@lubritrade_supply</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Регионы</div>
+            <div class="contact-value">KZ · UZ · TM · KG · TJ</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Языки</div>
+            <div class="contact-value">Русский · Узбекский · English</div>
+          </div>
+        </div>
+        <p style="margin-top:1.5rem;">Мы оставляем за собой право вносить изменения в настоящую Политику конфиденциальности. Об изменениях мы уведомим через обновление даты на данной странице и, при необходимости, через прямое уведомление.</p>
+      </div>
+    </section>
+
+  </div>
+  <!-- /RU -->
+
+  <!-- ======================== UZBEK ======================== -->
+  <div data-lang="uz">
+    <nav class="toc">
+      <div class="toc-title">Mundarija</div>
+      <ul class="toc-list">
+        <li><a href="#uz-1" data-num="01">Biz haqimizda</a></li>
+        <li><a href="#uz-2" data-num="02">Qanday ma'lumotlar to'planadi</a></li>
+        <li><a href="#uz-3" data-num="03">Ma'lumotlarni qayta ishlash maqsadlari</a></li>
+        <li><a href="#uz-4" data-num="04">Huquqiy asos</a></li>
+        <li><a href="#uz-5" data-num="05">Uchinchi shaxslarga uzatish</a></li>
+        <li><a href="#uz-6" data-num="06">Saqlash va himoya</a></li>
+        <li><a href="#uz-7" data-num="07">Sizning huquqlaringiz</a></li>
+        <li><a href="#uz-8" data-num="08">Bog'lanish</a></li>
+      </ul>
+    </nav>
+
+    <section class="policy-section" id="uz-1">
+      <div class="section-header">
+        <span class="section-num">01 —</span>
+        <h2 class="section-title">Biz haqimizda va ushbu siyosat nima uchun</h2>
+      </div>
+      <div class="section-body">
+        <p>Ushbu Maxfiylik siyosati <strong>LubriTrade Industrial Supply</strong> kompaniyasining faoliyatiga tegishli — Qozog'iston, O'zbekiston, Turkmaniston, Qirg'iziston va Tojikistondagi korporativ mijozlar uchun sanoat moylash materiallari, motor moylari va texnik suyuqliklarni yetkazib beruvchi.</p>
+        <p>Ushbu siyosat Facebook Lead Ads reklamalari shakllari, WhatsApp Business va B2B marketing maqsadlarida foydalaniladigan boshqa raqamli kanallar orqali olingan shaxsiy ma'lumotlarni qanday to'plash, qayta ishlash va himoya qilishimizni tavsiflaydi.</p>
+        <div class="highlight-box">
+          <p>Facebook shakli orqali ariza qoldirish yoki "WhatsApp orqali bog'lanish" tugmasini bosish orqali siz ushbu siyosat shartlariga roziligingizni tasdiqlaysiz va ma'lumotlaringizni ko'rsatilgan maqsadlarda qayta ishlashga roziligyingizni bildirasiz.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-2">
+      <div class="section-header">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">Qanday ma'lumotlar to'planadi</h2>
+      </div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead>
+            <tr><th>Ma'lumot turi</th><th>Misollar</th><th>Manba</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Aloqa ma'lumotlari</td><td>Ism, lavozim, telefon, WhatsApp, email</td><td>Lead Ads shakli</td></tr>
+            <tr><td>Kompaniya ma'lumotlari</td><td>Kompaniya nomi, mamlakat, soha, parkoviy/korxona hajmi</td><td>Lead Ads shakli</td></tr>
+            <tr><td>Tijorat ma'lumotlari</td><td>Mahsulot kategoriyalari, xarid hajmi, davriylik</td><td>Lead Ads / yozishmalar</td></tr>
+            <tr><td>Texnik ma'lumotlar</td><td>IP-manzil, qurilma turi, Facebook reklama identifikatori</td><td>Facebook Pixel / avtomatik</td></tr>
+          </tbody>
+        </table>
+        <p>Biz sog'liq holati, siyosiy qarashlar, diniy e'tiqodlar yoki biometrik ma'lumotlar kabi maxsus shaxsiy ma'lumotlar toifalarini to'plamaymiz.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-3">
+      <div class="section-header">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">Ma'lumotlarni qayta ishlash maqsadlari</h2>
+      </div>
+      <div class="section-body">
+        <p>Sizning ma'lumotlaringiz faqat quyidagi tijorat va operatsion maqsadlarda qayta ishlanadi: moylash materiallari yetkazib berish so'roviga javob berish; texnik xususiyatlarni taqdim etish (API, ACEA, ISO VG belgilash); individual tijorat taklifi tayyorlash; namunalar yuborish; shartnoma tuzishdan oldingi muloqot; va roziligingiz mavjud bo'lgan taqdirda marketing aloqalari.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-4">
+      <div class="section-header">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">Huquqiy asos</h2>
+      </div>
+      <div class="section-body">
+        <p>Shaxsiy ma'lumotlarni qayta ishlash quyidagi asoslarda amalga oshiriladi: ma'lumotlar sub'ektining roziligi (Lead Ads formasini ixtiyoriy to'ldirish), qonuniy manfaatlar (potentsial B2B hamkorlar bilan biznes munosabatlarini rivojlantirish) va shartnoma oldidan amallar (yetkazib berish shartnomasi tuzilishidan oldin ariza beruvchining so'roviga binoan amallar).</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-5">
+      <div class="section-header">
+        <span class="section-num">05 —</span>
+        <h2 class="section-title">Uchinchi shaxslarga uzatish</h2>
+      </div>
+      <div class="section-body">
+        <p>Biz sizning shaxsiy ma'lumotlaringizni sotmaymiz, ijaraga bermaymiz va uchinchi shaxslarga oshkor etmaymiz. Bundan mustasno: Meta Platforms (Facebook) — Lead Ads shakllarini qayta ishlash; WhatsApp Business API — xabarlar yetkazib berish; CRM-provayder — bitimlar va mijozlar ma'lumotlarini saqlash; logistik hamkorlar — mahsulot namunalarini yetkazib berish (faqat zarur ma'lumotlar: ism, manzil).</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-6">
+      <div class="section-header">
+        <span class="section-num">06 —</span>
+        <h2 class="section-title">Saqlash muddatlari va ma'lumotlar himoyasi</h2>
+      </div>
+      <div class="section-body">
+        <p>Shaxsiy ma'lumotlar oxirgi o'zaro muloqotdan 3 (uch) yil davomida yoki rozilik bekor qilingunga qadar saqlanadi — qaysi biri avvalroq bo'lsa. Tuzilgan yetkazib berish shartnomalari bilan bog'liq ma'lumotlar buxgalteriya va soliq qonunchiligiga muvofiq 5 (besh) yil davomida saqlanadi.</p>
+        <p>Biz ma'lumotlar uzatilganda SSL/TLS shifrlashdan, minimal imtiyozlar tamoyiliga asoslangan cheklangan ma'lumotlar bazasiga kirishdan va ikki faktorli autentifikatsiyadan foydalanamiz.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-7">
+      <div class="section-header">
+        <span class="section-num">07 —</span>
+        <h2 class="section-title">Sizning huquqlaringiz</h2>
+      </div>
+      <div class="section-body">
+        <p>Sizda quyidagi huquqlar mavjud: kirish huquqi, to'g'rilash huquqi, o'chirish huquqi ("unutilish huquqi"), rozilikni bekor qilish huquqi, cheklash huquqi va ma'lumotlar ko'chirish huquqi. Har qanday so'rov uchun 10-bo'limdagi elektron pochta manziliga murojaat qiling. Javob berish muddati — 30 ish kunidan ko'p emas.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="uz-8">
+      <div class="section-header">
+        <span class="section-num">08 —</span>
+        <h2 class="section-title">Bog'lanish ma'lumotlari</h2>
+      </div>
+      <div class="section-body">
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">Kompaniya</div><div class="contact-value">LubriTrade Industrial Supply</div></div>
+          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">privacy@lubritrade.com</div></div>
+          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 XXX XXXX XXXX</div></div>
+          <div class="contact-row"><div class="contact-label">Telegram</div><div class="contact-value">@lubritrade_supply</div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /UZ -->
+
+  <!-- ======================== ENGLISH ======================== -->
+  <div data-lang="en">
+
+    <nav class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#en-1" data-num="01">Who We Are</a></li>
+        <li><a href="#en-2" data-num="02">Data We Collect</a></li>
+        <li><a href="#en-3" data-num="03">Purposes of Processing</a></li>
+        <li><a href="#en-4" data-num="04">Legal Basis</a></li>
+        <li><a href="#en-5" data-num="05">Third-Party Sharing</a></li>
+        <li><a href="#en-6" data-num="06">Retention & Security</a></li>
+        <li><a href="#en-7" data-num="07">Your Rights</a></li>
+        <li><a href="#en-8" data-num="08">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="policy-section" id="en-1">
+      <div class="section-header">
+        <span class="section-num">01 —</span>
+        <h2 class="section-title">Who We Are</h2>
+      </div>
+      <div class="section-body">
+        <p>This Privacy Policy applies to <strong>LubriTrade Industrial Supply</strong> ("Company", "we", "us"), a B2B supplier of industrial lubricants, motor oils, hydraulic fluids, gear oils, and related technical products for corporate clients across Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, and Tajikistan.</p>
+        <p>This policy describes how we collect, process, and protect personal data received through Facebook Lead Ads forms, WhatsApp Business, and other digital channels used for B2B lubricant marketing.</p>
+        <div class="highlight-box">
+          <p>By submitting an inquiry through a Facebook Lead Ad form or clicking a WhatsApp contact button, you confirm your agreement with this policy and consent to processing of your data for the stated purposes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-2">
+      <div class="section-header">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">Data We Collect</h2>
+      </div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead>
+            <tr><th>Data Category</th><th>Examples</th><th>Source</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Contact Data</td><td>Name, job title, phone number, WhatsApp, email</td><td>Lead Ads Form</td></tr>
+            <tr><td>Company Data</td><td>Company name, country, industry, fleet/plant size</td><td>Lead Ads Form</td></tr>
+            <tr><td>Commercial Data</td><td>Product categories of interest, purchase volume, frequency</td><td>Lead Ads / Correspondence</td></tr>
+            <tr><td>Technical Data</td><td>IP address, device type, Facebook advertising ID</td><td>Facebook Pixel / Automatic</td></tr>
+            <tr><td>Correspondence Data</td><td>WhatsApp Business message content</td><td>WhatsApp Business</td></tr>
+          </tbody>
+        </table>
+        <p>We do not collect special categories of personal data, including health, political opinions, religious beliefs, or biometric data.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-3">
+      <div class="section-header">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">Purposes of Processing</h2>
+      </div>
+      <div class="section-body">
+        <p>Your data is processed exclusively for the following purposes: responding to your lubricant supply inquiry; providing product technical specifications (API/ACEA grades, viscosity grades, application data); preparing a customized commercial quotation based on volume and trade terms (FOB, CIP, DAP); organizing sample shipments; CRM follow-up and contract negotiation; and marketing communications (only with explicit consent).</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-4">
+      <div class="section-header">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">Legal Basis for Processing</h2>
+      </div>
+      <div class="section-body">
+        <p><strong>Consent</strong> — voluntarily completing the Lead Ads form constitutes your explicit consent. Consent may be withdrawn at any time without affecting the lawfulness of prior processing.</p>
+        <p><strong>Legitimate Interests</strong> — processing is necessary for the Company's legitimate commercial interests in developing business relationships with prospective B2B partners in the lubricants sector.</p>
+        <p><strong>Pre-Contractual Steps</strong> — processing is necessary to carry out steps requested by the data subject prior to entering into a supply agreement.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-5">
+      <div class="section-header">
+        <span class="section-num">05 —</span>
+        <h2 class="section-title">Third-Party Sharing</h2>
+      </div>
+      <div class="section-body">
+        <p>We do not sell, rent, or disclose your personal data to third parties, except: Meta Platforms (Facebook) for processing Lead Ads forms per Meta Business Terms; WhatsApp / Meta for message delivery via WhatsApp Business API; CRM provider under a Data Processing Agreement; and logistics partners for sample delivery (name and address only).</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-6">
+      <div class="section-header">
+        <span class="section-num">06 —</span>
+        <h2 class="section-title">Data Retention & Security</h2>
+      </div>
+      <div class="section-body">
+        <p><strong>Retention:</strong> Personal data is retained for 3 years from the last interaction or until consent is withdrawn, whichever comes first. Data related to concluded supply contracts is retained for 5 years per applicable accounting and tax regulations.</p>
+        <p><strong>Security measures:</strong> SSL/TLS encryption in transit, role-based access control, regular security audits, and two-factor authentication for all personnel with access to personal data.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-7">
+      <div class="section-header">
+        <span class="section-num">07 —</span>
+        <h2 class="section-title">Your Rights</h2>
+      </div>
+      <div class="section-body">
+        <p>You have the right to: access your personal data; rectification of inaccurate data; erasure ("right to be forgotten"); withdrawal of consent; restriction of processing; and data portability in a structured, machine-readable format. To exercise any right, contact us at the email in Section 8. Response time: within 30 business days.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-8">
+      <div class="section-header">
+        <span class="section-num">08 —</span>
+        <h2 class="section-title">Contact Information</h2>
+      </div>
+      <div class="section-body">
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">Company</div><div class="contact-value">LubriTrade Industrial Supply</div></div>
+          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">privacy@lubritrade.com</div></div>
+          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 XXX XXXX XXXX</div></div>
+          <div class="contact-row"><div class="contact-label">Telegram</div><div class="contact-value">@lubritrade_supply</div></div>
+          <div class="contact-row"><div class="contact-label">Regions</div><div class="contact-value">KZ · UZ · TM · KG · TJ</div></div>
+        </div>
+        <p style="margin-top:1.5rem;">We reserve the right to update this Privacy Policy. Changes will be communicated by updating the date on this page and, where required, by direct notification.</p>
+      </div>
+    </section>
+
+  </div>
+  <!-- /EN -->
+
+  <footer class="site-footer">
+    <div class="footer-copy">© 2026 LubriTrade Industrial Supply. All rights reserved.</div>
+    
+  </footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.classList.toggle('visible', el.dataset.lang === lang);
+    });
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase().startsWith(lang));
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

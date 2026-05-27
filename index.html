@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Политика конфиденциальности / Privacy Policy — LubriTrade Industrial</title>
+  <title>Privacy Policy — 山东金孚润滑科技有限公司</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -19,11 +19,8 @@
       --mono: 'IBM Plex Mono', monospace;
       --serif: 'Libre Baskerville', Georgia, serif;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text-primary);
@@ -32,8 +29,6 @@
       line-height: 1.8;
       min-height: 100vh;
     }
-
-    /* Noise texture overlay */
     body::before {
       content: '';
       position: fixed;
@@ -42,7 +37,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
     .wrapper {
       position: relative;
       z-index: 1;
@@ -50,8 +44,6 @@
       margin: 0 auto;
       padding: 0 2rem 6rem;
     }
-
-    /* Header */
     .site-header {
       border-bottom: 1px solid var(--border);
       padding: 2rem 0 1.5rem;
@@ -62,941 +54,496 @@
       gap: 1rem;
       flex-wrap: wrap;
     }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-
-    .brand-name {
-      font-family: var(--mono);
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .brand-sub {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      color: var(--text-muted);
-      letter-spacing: 0.1em;
-    }
-
-    .doc-badge {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      border: 1px solid var(--border);
-      padding: 0.35rem 0.75rem;
-      border-radius: 2px;
-    }
-
-    /* Hero title block */
-    .page-hero {
-      margin-bottom: 3.5rem;
-      padding-bottom: 2.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .page-title {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
-    }
-
-    .page-title span {
-      color: var(--accent);
-    }
-
-    .page-subtitle {
-      font-family: var(--mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-    }
-
-    .meta-row {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-
-    .meta-item {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-
-    .meta-label {
-      font-family: var(--mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .meta-value {
-      font-family: var(--mono);
-      font-size: 0.75rem;
-      color: var(--accent);
-    }
-
-    /* Language toggle */
-    .lang-toggle {
-      display: inline-flex;
-      gap: 0;
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      overflow: hidden;
-      margin-bottom: 3rem;
-    }
-
-    .lang-btn {
-      background: none;
-      border: none;
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      padding: 0.5rem 1.1rem;
-      cursor: pointer;
-      transition: all 0.2s;
-      border-right: 1px solid var(--border);
-    }
-
+    .brand-name { font-family: var(--mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; color: var(--accent); }
+    .brand-sub { font-family: var(--mono); font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.08em; margin-top: 0.2rem; }
+    .doc-badge { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border); padding: 0.35rem 0.75rem; border-radius: 2px; }
+    .page-hero { margin-bottom: 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--border); }
+    .page-subtitle { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.75rem; }
+    .page-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; color: var(--text-primary); }
+    .page-title span { color: var(--accent); }
+    .lang-toggle { display: inline-flex; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; margin-bottom: 3rem; }
+    .lang-btn { background: none; border: none; border-right: 1px solid var(--border); font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); padding: 0.5rem 1.1rem; cursor: pointer; transition: all 0.2s; }
     .lang-btn:last-child { border-right: none; }
-
-    .lang-btn.active {
-      background: var(--accent);
-      color: var(--bg);
-      font-weight: 600;
-    }
-
-    .lang-btn:not(.active):hover {
-      background: var(--surface);
-      color: var(--text-secondary);
-    }
-
-    /* TOC */
-    .toc {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      padding: 1.75rem 2rem;
-      margin-bottom: 3.5rem;
-      border-radius: 0 3px 3px 0;
-    }
-
-    .toc-title {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-
-    .toc-list {
-      list-style: none;
-      columns: 2;
-      gap: 0.5rem;
-    }
-
-    @media (max-width: 600px) {
-      .toc-list { columns: 1; }
-    }
-
-    .toc-list li {
-      margin-bottom: 0.4rem;
-    }
-
-    .toc-list a {
-      font-family: var(--mono);
-      font-size: 0.7rem;
-      color: var(--text-secondary);
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      transition: color 0.2s;
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-    }
-
-    .toc-list a::before {
-      content: attr(data-num);
-      color: var(--text-muted);
-      font-size: 0.6rem;
-      min-width: 1.4rem;
-    }
-
+    .lang-btn.active { background: var(--accent); color: var(--bg); font-weight: 600; }
+    .lang-btn:not(.active):hover { background: var(--surface); color: var(--text-secondary); }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 1.75rem 2rem; margin-bottom: 3.5rem; border-radius: 0 3px 3px 0; }
+    .toc-title { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+    .toc-list { list-style: none; columns: 2; gap: 0.5rem; }
+    @media (max-width: 600px) { .toc-list { columns: 1; } }
+    .toc-list li { margin-bottom: 0.4rem; }
+    .toc-list a { font-family: var(--mono); font-size: 0.7rem; color: var(--text-secondary); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; display: flex; align-items: baseline; gap: 0.5rem; }
+    .toc-list a::before { content: attr(data-num); color: var(--text-muted); font-size: 0.6rem; min-width: 1.4rem; }
     .toc-list a:hover { color: var(--accent); }
-
-    /* Sections */
-    .policy-section {
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .policy-section:last-of-type {
-      border-bottom: none;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .section-num {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      color: var(--accent-dim);
-      letter-spacing: 0.1em;
-      min-width: 2.5rem;
-    }
-
-    .section-title {
-      font-family: var(--serif);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.3;
-    }
-
-    .section-body p {
-      color: var(--text-secondary);
-      margin-bottom: 1rem;
-      font-size: 0.95rem;
-    }
-
+    .policy-section { margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border); animation: fadeUp 0.5s ease both; }
+    .policy-section:last-of-type { border-bottom: none; }
+    .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; }
+    .section-num { font-family: var(--mono); font-size: 0.65rem; color: var(--accent-dim); letter-spacing: 0.1em; min-width: 2.5rem; }
+    .section-title { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--text-primary); line-height: 1.3; }
+    .section-body p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem; }
     .section-body p:last-child { margin-bottom: 0; }
-
-    /* Data table */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.5rem 0;
-      font-size: 0.85rem;
-    }
-
-    .data-table th {
-      font-family: var(--mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      text-align: left;
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--accent-dim);
-      background: var(--surface);
-    }
-
-    .data-table td {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border);
-      color: var(--text-secondary);
-      vertical-align: top;
-      font-size: 0.85rem;
-    }
-
-    .data-table tr:hover td {
-      background: rgba(200, 151, 58, 0.04);
-    }
-
-    /* Highlight box */
-    .highlight-box {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 0 3px 3px 0;
-    }
-
-    .highlight-box p {
-      margin: 0 !important;
-      font-size: 0.9rem !important;
-      color: var(--text-primary) !important;
-    }
-
-    /* Contact block */
-    .contact-block {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 2rem;
-      border-radius: 3px;
-      margin-top: 1.5rem;
-    }
-
-    .contact-row {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
+    .data-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
+    .data-table th { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid var(--accent-dim); background: var(--surface); }
+    .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; font-size: 0.85rem; }
+    .data-table tr:hover td { background: rgba(200,151,58,0.04); }
+    .highlight-box { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem; margin: 1.5rem 0; border-radius: 0 3px 3px 0; }
+    .highlight-box p { margin: 0 !important; font-size: 0.9rem !important; color: var(--text-primary) !important; }
+    .contact-block { background: var(--surface); border: 1px solid var(--border); padding: 2rem; border-radius: 3px; margin-top: 1.5rem; }
+    .contact-row { display: flex; gap: 1rem; align-items: flex-start; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
     .contact-row:last-child { border-bottom: none; }
-
-    .contact-label {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      min-width: 80px;
-      padding-top: 0.1rem;
-    }
-
-    .contact-value {
-      font-family: var(--mono);
-      font-size: 0.8rem;
-      color: var(--accent);
-    }
-
-    /* Footer */
-    .site-footer {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .footer-copy {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-    }
-
-    .footer-rev {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      color: var(--text-muted);
-    }
-
-    /* Language content toggle */
+    .contact-label { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); min-width: 80px; padding-top: 0.1rem; }
+    .contact-value { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); }
+    .site-footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; }
+    .footer-copy { font-family: var(--mono); font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.08em; }
     [data-lang] { display: none; }
     [data-lang].visible { display: block; }
-
-    /* Smooth reveal */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .policy-section {
-      animation: fadeUp 0.5s ease both;
-    }
-
-    .policy-section:nth-child(1) { animation-delay: 0.05s; }
-    .policy-section:nth-child(2) { animation-delay: 0.1s; }
-    .policy-section:nth-child(3) { animation-delay: 0.15s; }
-    .policy-section:nth-child(4) { animation-delay: 0.2s; }
-    .policy-section:nth-child(5) { animation-delay: 0.25s; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .policy-section:nth-child(1){animation-delay:0.05s}
+    .policy-section:nth-child(2){animation-delay:0.1s}
+    .policy-section:nth-child(3){animation-delay:0.15s}
+    .policy-section:nth-child(4){animation-delay:0.2s}
+    .policy-section:nth-child(5){animation-delay:0.25s}
+    .policy-section:nth-child(6){animation-delay:0.3s}
   </style>
 </head>
 <body>
 <div class="wrapper">
 
-  <!-- Header -->
   <header class="site-header">
-    <div class="brand">
+    <div>
       <div class="brand-name">山东金孚润滑科技有限公司</div>
-      <div class="brand-sub">Industrial Lubricants · Central Asia Export</div>
+      <div class="brand-sub">Shandong Jinfu Lubrication Technology Co., Ltd.</div>
     </div>
-    
+    <div class="doc-badge">Privacy Policy</div>
   </header>
 
-  <!-- Page Hero -->
   <div class="page-hero">
-    <div class="page-subtitle">Data Protection & Lead Collection</div>
-    <h1 class="page-title">Политика<br><span>Конфиденциальности</span></h1>
-    </div>
-      <div class="meta-item">
-        <div class="meta-label">Последнее обновление</div>
-        <div class="meta-value"></div>
-      </div>
-      <div class="meta-item">
-        <div class="meta-label">Регион применения</div>
-        <div class="meta-value">KZ · UZ · TM · KG · TJ</div>
-      </div>
-      <div class="meta-item">
-        <div class="meta-label">Платформа</div>
-        <div class="meta-value">Facebook Lead Ads</div>
-      </div>
-    </div>
+    <div class="page-subtitle">Global Data Protection Policy · Facebook Lead Ads</div>
+    <h1 class="page-title">Privacy <span>Policy</span></h1>
   </div>
 
-  <!-- Language Toggle -->
   <div class="lang-toggle">
-    <button class="lang-btn active" onclick="setLang('ru')">RU 🇷🇺</button>
-    <button class="lang-btn" onclick="setLang('uz')">UZ 🇺🇿</button>
-    <button class="lang-btn" onclick="setLang('en')">EN 🌐</button>
+    <button class="lang-btn active" onclick="setLang('en')">EN 🌐</button>
+    <button class="lang-btn" onclick="setLang('zh')">中文 🇨🇳</button>
+    <button class="lang-btn" onclick="setLang('ru')">RU 🇷🇺</button>
+    <button class="lang-btn" onclick="setLang('ar')">AR 🌍</button>
   </div>
 
-  <!-- ======================== RUSSIAN ======================== -->
-  <div data-lang="ru" class="visible">
-
-    <nav class="toc">
-      <div class="toc-title">Содержание</div>
-      <ul class="toc-list">
-        <li><a href="#ru-1" data-num="01">Кто мы</a></li>
-        <li><a href="#ru-2" data-num="02">Какие данные мы собираем</a></li>
-        <li><a href="#ru-3" data-num="03">Цели обработки данных</a></li>
-        <li><a href="#ru-4" data-num="04">Правовая основа</a></li>
-        <li><a href="#ru-5" data-num="05">Передача третьим лицам</a></li>
-        <li><a href="#ru-6" data-num="06">Хранение и защита</a></li>
-        <li><a href="#ru-7" data-num="07">Ваши права</a></li>
-        <li><a href="#ru-8" data-num="08">WhatsApp и мессенджеры</a></li>
-        <li><a href="#ru-9" data-num="09">Файлы cookie</a></li>
-        <li><a href="#ru-10" data-num="10">Контакты</a></li>
-      </ul>
-    </nav>
-
-    <section class="policy-section" id="ru-1">
-      <div class="section-header">
-        <span class="section-num">01 —</span>
-        <h2 class="section-title">Кто мы и для чего эта политика</h2>
-      </div>
-      <div class="section-body">
-        <p>Настоящая Политика конфиденциальности распространяется на деятельность компании <strong>山东金孚润滑科技有限公司</strong> («Компания», «мы», «нас») — поставщика промышленных смазочных материалов, моторных масел и технических жидкостей для корпоративных клиентов в Казахстане, Узбекистане, Туркменистане, Кыргызстане и Таджикистане.</p>
-        <p>Данная политика описывает, как мы собираем, обрабатываем и защищаем персональные данные, полученные через рекламные формы Facebook Lead Ads, WhatsApp Business и иные цифровые каналы, используемые в целях B2B-маркетинга смазочных материалов.</p>
-        <div class="highlight-box">
-          <p>Оставляя заявку через форму Facebook или нажимая кнопку «Связаться в WhatsApp», вы подтверждаете своё согласие с условиями настоящей политики и даёте согласие на обработку ваших данных в указанных целях.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-2">
-      <div class="section-header">
-        <span class="section-num">02 —</span>
-        <h2 class="section-title">Какие данные мы собираем</h2>
-      </div>
-      <div class="section-body">
-        <p>В рамках рекламных кампаний на Facebook мы можем собирать следующие категории данных:</p>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Тип данных</th>
-              <th>Примеры</th>
-              <th>Источник</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Контактные данные</td>
-              <td>Имя, должность, номер телефона, WhatsApp, email</td>
-              <td>Форма Lead Ads</td>
-            </tr>
-            <tr>
-              <td>Данные о компании</td>
-              <td>Название компании, страна, отрасль, численность парка/предприятия</td>
-              <td>Форма Lead Ads</td>
-            </tr>
-            <tr>
-              <td>Коммерческие данные</td>
-              <td>Интересующие категории продукции, объём закупок, периодичность</td>
-              <td>Форма Lead Ads / переписка</td>
-            </tr>
-            <tr>
-              <td>Технические данные</td>
-              <td>IP-адрес, тип устройства, идентификатор рекламы Facebook</td>
-              <td>Facebook Pixel / автоматически</td>
-            </tr>
-            <tr>
-              <td>Данные переписки</td>
-              <td>Содержание сообщений в WhatsApp Business</td>
-              <td>WhatsApp Business</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Мы не собираем специальные категории персональных данных: сведения о состоянии здоровья, политических взглядах, вероисповедании или биометрические данные.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-3">
-      <div class="section-header">
-        <span class="section-num">03 —</span>
-        <h2 class="section-title">Цели обработки данных</h2>
-      </div>
-      <div class="section-body">
-        <p>Ваши данные обрабатываются исключительно в следующих коммерческих и операционных целях:</p>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Цель</th>
-              <th>Описание</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Обработка запроса</td>
-              <td>Ответ на ваш запрос о поставке смазочных материалов, предоставление технических характеристик продукции (моторных масел, редукторных масел, гидравлических жидкостей и др.)</td>
-            </tr>
-            <tr>
-              <td>Подготовка коммерческого предложения</td>
-              <td>Формирование индивидуального предложения с учётом объёма закупок, требований к спецификации (API, ACEA, ISO VG) и условий поставки (FOB, CIP, DAP)</td>
-            </tr>
-            <tr>
-              <td>Отправка образцов</td>
-              <td>Организация отправки технических образцов продукции потенциальным клиентам</td>
-            </tr>
-            <tr>
-              <td>CRM и сопровождение сделки</td>
-              <td>Фиксация данных в системе управления клиентами для последующей коммуникации и заключения договора поставки</td>
-            </tr>
-            <tr>
-              <td>Маркетинговые коммуникации</td>
-              <td>Рассылка актуальных прайс-листов, технических бюллетеней и информации о новых продуктах — только при наличии вашего согласия</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Мы не используем ваши данные для автоматизированного принятия решений или профилирования в ущерб вашим законным интересам.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-4">
-      <div class="section-header">
-        <span class="section-num">04 —</span>
-        <h2 class="section-title">Правовая основа обработки</h2>
-      </div>
-      <div class="section-body">
-        <p>Обработка ваших персональных данных осуществляется на следующих правовых основаниях:</p>
-        <p><strong>Согласие субъекта данных</strong> — добровольное заполнение формы Lead Ads является выражением вашего явного согласия на обработку данных. Согласие может быть отозвано в любое время.</p>
-        <p><strong>Законный интерес</strong> — обработка необходима для реализации законных коммерческих интересов Компании в части развития деловых отношений с потенциальными B2B-партнёрами.</p>
-        <p><strong>Преддоговорные действия</strong> — обработка необходима для выполнения действий по запросу субъекта данных до заключения договора поставки.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-5">
-      <div class="section-header">
-        <span class="section-num">05 —</span>
-        <h2 class="section-title">Передача данных третьим лицам</h2>
-      </div>
-      <div class="section-body">
-        <p>Мы не продаём, не сдаём в аренду и не раскрываем ваши персональные данные третьим лицам, за исключением следующих случаев:</p>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Получатель</th>
-              <th>Цель передачи</th>
-              <th>Гарантии</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Meta Platforms (Facebook)</td>
-              <td>Обработка форм Lead Ads в соответствии с политикой Meta</td>
-              <td>Условия Meta Business Tools</td>
-            </tr>
-            <tr>
-              <td>WhatsApp / Meta</td>
-              <td>Доставка сообщений через WhatsApp Business API</td>
-              <td>Политика конфиденциальности WhatsApp</td>
-            </tr>
-            <tr>
-              <td>CRM-провайдер</td>
-              <td>Хранение данных о сделках и клиентах</td>
-              <td>Договор обработки данных (DPA)</td>
-            </tr>
-            <tr>
-              <td>Логистические партнёры</td>
-              <td>Организация доставки образцов продукции</td>
-              <td>Только необходимые данные (ФИО, адрес)</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Все третьи лица, которым могут быть переданы данные, обязаны соблюдать применимые нормы защиты персональных данных.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-6">
-      <div class="section-header">
-        <span class="section-num">06 —</span>
-        <h2 class="section-title">Сроки хранения и защита данных</h2>
-      </div>
-      <div class="section-body">
-        <p><strong>Срок хранения:</strong> Персональные данные хранятся в течение 3 (трёх) лет с момента последнего взаимодействия или до момента отзыва согласия — в зависимости от того, что наступит раньше. Данные, связанные с заключёнными договорами поставки, хранятся в течение 5 (пяти) лет в соответствии с требованиями бухгалтерского и налогового законодательства.</p>
-        <p><strong>Технические меры защиты:</strong> Мы применяем SSL/TLS шифрование при передаче данных, ограниченный доступ к базам данных на основе принципа минимальных привилегий, регулярный аудит безопасности систем хранения данных, а также двухфакторную аутентификацию для сотрудников, имеющих доступ к персональным данным.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-7">
-      <div class="section-header">
-        <span class="section-num">07 —</span>
-        <h2 class="section-title">Ваши права как субъекта данных</h2>
-      </div>
-      <div class="section-body">
-        <p>В соответствии с применимым законодательством о защите персональных данных вы имеете право:</p>
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Право</th>
-              <th>Содержание</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Право на доступ</td>
-              <td>Получить подтверждение факта обработки и копию ваших персональных данных</td>
-            </tr>
-            <tr>
-              <td>Право на исправление</td>
-              <td>Потребовать исправления неточных или устаревших данных</td>
-            </tr>
-            <tr>
-              <td>Право на удаление</td>
-              <td>Потребовать удаления данных («право на забвение»)</td>
-            </tr>
-            <tr>
-              <td>Право на отзыв согласия</td>
-              <td>В любой момент отозвать ранее данное согласие без ущерба для законности предшествующей обработки</td>
-            </tr>
-            <tr>
-              <td>Право на ограничение</td>
-              <td>Потребовать ограничения обработки в предусмотренных законом случаях</td>
-            </tr>
-            <tr>
-              <td>Право на переносимость</td>
-              <td>Получить свои данные в структурированном, машиночитаемом формате</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Для реализации любого из указанных прав направьте запрос на контактный email, указанный в разделе 10. Срок ответа — не более 30 рабочих дней.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-8">
-      <div class="section-header">
-        <span class="section-num">08 —</span>
-        <h2 class="section-title">WhatsApp и мессенджеры</h2>
-      </div>
-      <div class="section-body">
-        <p>При нажатии кнопки «Связаться в WhatsApp» в рекламном объявлении Facebook вы инициируете переписку через WhatsApp Business. Содержание переписки (запросы на поставку смазочных материалов, спецификации, коммерческие условия) фиксируется и хранится в системе WhatsApp Business и нашей CRM в целях обслуживания сделки.</p>
-        <div class="highlight-box">
-          <p>Мы не используем данные переписки в WhatsApp для рекламных рассылок без вашего явного согласия. Вы можете в любой момент прекратить переписку, написав «СТОП» или «ОТПИСАТЬСЯ».</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-9">
-      <div class="section-header">
-        <span class="section-num">09 —</span>
-        <h2 class="section-title">Facebook Pixel и файлы cookie</h2>
-      </div>
-      <div class="section-body">
-        <p>На нашем сайте и в рекламных материалах может использоваться инструмент Facebook Pixel для отслеживания взаимодействий с рекламой (просмотров, кликов, заполнений форм) в целях оптимизации рекламных кампаний и построения похожих аудиторий (Lookalike Audiences) из потенциальных B2B-клиентов в сфере смазочных материалов.</p>
-        <p>Вы можете управлять настройками рекламы на Facebook через раздел «Настройки рекламы» в вашем аккаунте Facebook. Для отказа от отслеживания по всей сети посетите <strong>aboutads.info</strong> или <strong>youronlinechoices.com</strong>.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="ru-10">
-      <div class="section-header">
-        <span class="section-num">10 —</span>
-        <h2 class="section-title">Контактные данные</h2>
-      </div>
-      <div class="section-body">
-        <p>По всем вопросам, связанным с обработкой персональных данных, а также для реализации ваших прав обращайтесь:</p>
-        <div class="contact-block">
-          <div class="contact-row">
-            <div class="contact-label">Компания</div>
-            <div class="contact-value">山东金孚润滑科技有限公司</div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-label">Email</div>
-            <div class="contact-value">jinfulubrication@gmail.com</div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-label">WhatsApp</div>
-            <div class="contact-value">+86 15339929300</div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-label">Telegram</div>
-            <div class="contact-value">@jinfu_lubrication</div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-label">Регионы</div>
-            <div class="contact-value">KZ · UZ · TM · KG · TJ</div>
-          </div>
-          <div class="contact-row">
-            <div class="contact-label">Языки</div>
-            <div class="contact-value">Русский · Узбекский · English</div>
-          </div>
-        </div>
-        <p style="margin-top:1.5rem;">Мы оставляем за собой право вносить изменения в настоящую Политику конфиденциальности. Об изменениях мы уведомим через обновление даты на данной странице и, при необходимости, через прямое уведомление.</p>
-      </div>
-    </section>
-
-  </div>
-  <!-- /RU -->
-
-  <!-- ======================== UZBEK ======================== -->
-  <div data-lang="uz">
-    <nav class="toc">
-      <div class="toc-title">Mundarija</div>
-      <ul class="toc-list">
-        <li><a href="#uz-1" data-num="01">Biz haqimizda</a></li>
-        <li><a href="#uz-2" data-num="02">Qanday ma'lumotlar to'planadi</a></li>
-        <li><a href="#uz-3" data-num="03">Ma'lumotlarni qayta ishlash maqsadlari</a></li>
-        <li><a href="#uz-4" data-num="04">Huquqiy asos</a></li>
-        <li><a href="#uz-5" data-num="05">Uchinchi shaxslarga uzatish</a></li>
-        <li><a href="#uz-6" data-num="06">Saqlash va himoya</a></li>
-        <li><a href="#uz-7" data-num="07">Sizning huquqlaringiz</a></li>
-        <li><a href="#uz-8" data-num="08">Bog'lanish</a></li>
-      </ul>
-    </nav>
-
-    <section class="policy-section" id="uz-1">
-      <div class="section-header">
-        <span class="section-num">01 —</span>
-        <h2 class="section-title">Biz haqimizda va ushbu siyosat nima uchun</h2>
-      </div>
-      <div class="section-body">
-        <p>Ushbu Maxfiylik siyosati <strong>山东金孚润滑科技有限公司</strong> kompaniyasining faoliyatiga tegishli — Qozog'iston, O'zbekiston, Turkmaniston, Qirg'iziston va Tojikistondagi korporativ mijozlar uchun sanoat moylash materiallari, motor moylari va texnik suyuqliklarni yetkazib beruvchi.</p>
-        <p>Ushbu siyosat Facebook Lead Ads reklamalari shakllari, WhatsApp Business va B2B marketing maqsadlarida foydalaniladigan boshqa raqamli kanallar orqali olingan shaxsiy ma'lumotlarni qanday to'plash, qayta ishlash va himoya qilishimizni tavsiflaydi.</p>
-        <div class="highlight-box">
-          <p>Facebook shakli orqali ariza qoldirish yoki "WhatsApp orqali bog'lanish" tugmasini bosish orqali siz ushbu siyosat shartlariga roziligingizni tasdiqlaysiz va ma'lumotlaringizni ko'rsatilgan maqsadlarda qayta ishlashga roziligyingizni bildirasiz.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-2">
-      <div class="section-header">
-        <span class="section-num">02 —</span>
-        <h2 class="section-title">Qanday ma'lumotlar to'planadi</h2>
-      </div>
-      <div class="section-body">
-        <table class="data-table">
-          <thead>
-            <tr><th>Ma'lumot turi</th><th>Misollar</th><th>Manba</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Aloqa ma'lumotlari</td><td>Ism, lavozim, telefon, WhatsApp, email</td><td>Lead Ads shakli</td></tr>
-            <tr><td>Kompaniya ma'lumotlari</td><td>Kompaniya nomi, mamlakat, soha, parkoviy/korxona hajmi</td><td>Lead Ads shakli</td></tr>
-            <tr><td>Tijorat ma'lumotlari</td><td>Mahsulot kategoriyalari, xarid hajmi, davriylik</td><td>Lead Ads / yozishmalar</td></tr>
-            <tr><td>Texnik ma'lumotlar</td><td>IP-manzil, qurilma turi, Facebook reklama identifikatori</td><td>Facebook Pixel / avtomatik</td></tr>
-          </tbody>
-        </table>
-        <p>Biz sog'liq holati, siyosiy qarashlar, diniy e'tiqodlar yoki biometrik ma'lumotlar kabi maxsus shaxsiy ma'lumotlar toifalarini to'plamaymiz.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-3">
-      <div class="section-header">
-        <span class="section-num">03 —</span>
-        <h2 class="section-title">Ma'lumotlarni qayta ishlash maqsadlari</h2>
-      </div>
-      <div class="section-body">
-        <p>Sizning ma'lumotlaringiz faqat quyidagi tijorat va operatsion maqsadlarda qayta ishlanadi: moylash materiallari yetkazib berish so'roviga javob berish; texnik xususiyatlarni taqdim etish (API, ACEA, ISO VG belgilash); individual tijorat taklifi tayyorlash; namunalar yuborish; shartnoma tuzishdan oldingi muloqot; va roziligingiz mavjud bo'lgan taqdirda marketing aloqalari.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-4">
-      <div class="section-header">
-        <span class="section-num">04 —</span>
-        <h2 class="section-title">Huquqiy asos</h2>
-      </div>
-      <div class="section-body">
-        <p>Shaxsiy ma'lumotlarni qayta ishlash quyidagi asoslarda amalga oshiriladi: ma'lumotlar sub'ektining roziligi (Lead Ads formasini ixtiyoriy to'ldirish), qonuniy manfaatlar (potentsial B2B hamkorlar bilan biznes munosabatlarini rivojlantirish) va shartnoma oldidan amallar (yetkazib berish shartnomasi tuzilishidan oldin ariza beruvchining so'roviga binoan amallar).</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-5">
-      <div class="section-header">
-        <span class="section-num">05 —</span>
-        <h2 class="section-title">Uchinchi shaxslarga uzatish</h2>
-      </div>
-      <div class="section-body">
-        <p>Biz sizning shaxsiy ma'lumotlaringizni sotmaymiz, ijaraga bermaymiz va uchinchi shaxslarga oshkor etmaymiz. Bundan mustasno: Meta Platforms (Facebook) — Lead Ads shakllarini qayta ishlash; WhatsApp Business API — xabarlar yetkazib berish; CRM-provayder — bitimlar va mijozlar ma'lumotlarini saqlash; logistik hamkorlar — mahsulot namunalarini yetkazib berish (faqat zarur ma'lumotlar: ism, manzil).</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-6">
-      <div class="section-header">
-        <span class="section-num">06 —</span>
-        <h2 class="section-title">Saqlash muddatlari va ma'lumotlar himoyasi</h2>
-      </div>
-      <div class="section-body">
-        <p>Shaxsiy ma'lumotlar oxirgi o'zaro muloqotdan 3 (uch) yil davomida yoki rozilik bekor qilingunga qadar saqlanadi — qaysi biri avvalroq bo'lsa. Tuzilgan yetkazib berish shartnomalari bilan bog'liq ma'lumotlar buxgalteriya va soliq qonunchiligiga muvofiq 5 (besh) yil davomida saqlanadi.</p>
-        <p>Biz ma'lumotlar uzatilganda SSL/TLS shifrlashdan, minimal imtiyozlar tamoyiliga asoslangan cheklangan ma'lumotlar bazasiga kirishdan va ikki faktorli autentifikatsiyadan foydalanamiz.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-7">
-      <div class="section-header">
-        <span class="section-num">07 —</span>
-        <h2 class="section-title">Sizning huquqlaringiz</h2>
-      </div>
-      <div class="section-body">
-        <p>Sizda quyidagi huquqlar mavjud: kirish huquqi, to'g'rilash huquqi, o'chirish huquqi ("unutilish huquqi"), rozilikni bekor qilish huquqi, cheklash huquqi va ma'lumotlar ko'chirish huquqi. Har qanday so'rov uchun 10-bo'limdagi elektron pochta manziliga murojaat qiling. Javob berish muddati — 30 ish kunidan ko'p emas.</p>
-      </div>
-    </section>
-
-    <section class="policy-section" id="uz-8">
-      <div class="section-header">
-        <span class="section-num">08 —</span>
-        <h2 class="section-title">Bog'lanish ma'lumotlari</h2>
-      </div>
-      <div class="section-body">
-        <div class="contact-block">
-          <div class="contact-row"><div class="contact-label">Kompaniya</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
-          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
-          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 15339929300</div></div>
-          <div class="contact-row"><div class="contact-label">Telegram</div><div class="contact-value">@jinfu_lubrication</div></div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- /UZ -->
-
-  <!-- ======================== ENGLISH ======================== -->
-  <div data-lang="en">
-
+  <!-- ========== ENGLISH ========== -->
+  <div data-lang="en" class="visible">
     <nav class="toc">
       <div class="toc-title">Table of Contents</div>
       <ul class="toc-list">
         <li><a href="#en-1" data-num="01">Who We Are</a></li>
         <li><a href="#en-2" data-num="02">Data We Collect</a></li>
-        <li><a href="#en-3" data-num="03">Purposes of Processing</a></li>
+        <li><a href="#en-3" data-num="03">How We Use Your Data</a></li>
         <li><a href="#en-4" data-num="04">Legal Basis</a></li>
         <li><a href="#en-5" data-num="05">Third-Party Sharing</a></li>
         <li><a href="#en-6" data-num="06">Retention & Security</a></li>
         <li><a href="#en-7" data-num="07">Your Rights</a></li>
-        <li><a href="#en-8" data-num="08">Contact</a></li>
+        <li><a href="#en-8" data-num="08">WhatsApp & Messaging</a></li>
+        <li><a href="#en-9" data-num="09">Facebook Pixel & Cookies</a></li>
+        <li><a href="#en-10" data-num="10">Contact Us</a></li>
       </ul>
     </nav>
 
     <section class="policy-section" id="en-1">
-      <div class="section-header">
-        <span class="section-num">01 —</span>
-        <h2 class="section-title">Who We Are</h2>
-      </div>
+      <div class="section-header"><span class="section-num">01 —</span><h2 class="section-title">Who We Are</h2></div>
       <div class="section-body">
-        <p>This Privacy Policy applies to <strong>山东金孚润滑科技有限公司</strong> ("Company", "we", "us"), a B2B supplier of industrial lubricants, motor oils, hydraulic fluids, gear oils, and related technical products for corporate clients across Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, and Tajikistan.</p>
-        <p>This policy describes how we collect, process, and protect personal data received through Facebook Lead Ads forms, WhatsApp Business, and other digital channels used for B2B lubricant marketing.</p>
-        <div class="highlight-box">
-          <p>By submitting an inquiry through a Facebook Lead Ad form or clicking a WhatsApp contact button, you confirm your agreement with this policy and consent to processing of your data for the stated purposes.</p>
-        </div>
+        <p><strong>Shandong Jinfu Lubrication Technology Co., Ltd.</strong> (山东金孚润滑科技有限公司, "Company", "we", "us") is a manufacturer and exporter of industrial lubricants, motor oils, hydraulic fluids, gear oils, and related technical products, supplying B2B clients globally.</p>
+        <p>This Privacy Policy explains how we collect, use, and protect personal data submitted through Facebook Lead Ads forms, WhatsApp Business, and other digital marketing channels — regardless of the country or region where the advertisement is shown.</p>
+        <div class="highlight-box"><p>By submitting an inquiry form or clicking a WhatsApp contact button in our advertisement, you confirm your agreement with this Privacy Policy and consent to the processing of your data for the stated purposes.</p></div>
       </div>
     </section>
 
     <section class="policy-section" id="en-2">
-      <div class="section-header">
-        <span class="section-num">02 —</span>
-        <h2 class="section-title">Data We Collect</h2>
-      </div>
+      <div class="section-header"><span class="section-num">02 —</span><h2 class="section-title">Data We Collect</h2></div>
       <div class="section-body">
         <table class="data-table">
-          <thead>
-            <tr><th>Data Category</th><th>Examples</th><th>Source</th></tr>
-          </thead>
+          <thead><tr><th>Category</th><th>Examples</th><th>Source</th></tr></thead>
           <tbody>
-            <tr><td>Contact Data</td><td>Name, job title, phone number, WhatsApp, email</td><td>Lead Ads Form</td></tr>
-            <tr><td>Company Data</td><td>Company name, country, industry, fleet/plant size</td><td>Lead Ads Form</td></tr>
-            <tr><td>Commercial Data</td><td>Product categories of interest, purchase volume, frequency</td><td>Lead Ads / Correspondence</td></tr>
-            <tr><td>Technical Data</td><td>IP address, device type, Facebook advertising ID</td><td>Facebook Pixel / Automatic</td></tr>
-            <tr><td>Correspondence Data</td><td>WhatsApp Business message content</td><td>WhatsApp Business</td></tr>
+            <tr><td>Contact Data</td><td>Full name, job title, phone number, WhatsApp, email address</td><td>Lead Ads form</td></tr>
+            <tr><td>Company Data</td><td>Company name, country, industry sector, fleet or plant size</td><td>Lead Ads form</td></tr>
+            <tr><td>Commercial Data</td><td>Product categories of interest, estimated purchase volume, order frequency</td><td>Lead Ads form / correspondence</td></tr>
+            <tr><td>Technical Data</td><td>IP address, device type, Facebook advertising ID</td><td>Facebook Pixel / automatic</td></tr>
+            <tr><td>Communication Data</td><td>Content of WhatsApp Business messages</td><td>WhatsApp Business</td></tr>
           </tbody>
         </table>
-        <p>We do not collect special categories of personal data, including health, political opinions, religious beliefs, or biometric data.</p>
+        <p>We do not collect sensitive personal data such as health information, political opinions, religious beliefs, or biometric data.</p>
       </div>
     </section>
 
     <section class="policy-section" id="en-3">
-      <div class="section-header">
-        <span class="section-num">03 —</span>
-        <h2 class="section-title">Purposes of Processing</h2>
-      </div>
+      <div class="section-header"><span class="section-num">03 —</span><h2 class="section-title">How We Use Your Data</h2></div>
       <div class="section-body">
-        <p>Your data is processed exclusively for the following purposes: responding to your lubricant supply inquiry; providing product technical specifications (API/ACEA grades, viscosity grades, application data); preparing a customized commercial quotation based on volume and trade terms (FOB, CIP, DAP); organizing sample shipments; CRM follow-up and contract negotiation; and marketing communications (only with explicit consent).</p>
+        <table class="data-table">
+          <thead><tr><th>Purpose</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>Inquiry Response</td><td>Responding to your request for lubricant products, providing technical specifications (API/ACEA grades, viscosity, application data)</td></tr>
+            <tr><td>Commercial Quotation</td><td>Preparing a customized offer based on your volume, required specifications, and trade terms (FOB, CIP, DAP, etc.)</td></tr>
+            <tr><td>Sample Arrangement</td><td>Organizing shipment of product samples to prospective clients</td></tr>
+            <tr><td>CRM & Deal Follow-up</td><td>Recording data in our client management system for ongoing communication and contract execution</td></tr>
+            <tr><td>Marketing Communications</td><td>Sending product updates, price lists, and technical bulletins — only with your explicit consent</td></tr>
+          </tbody>
+        </table>
+        <p>We do not use your data for automated decision-making or profiling that adversely affects your legal interests.</p>
       </div>
     </section>
 
     <section class="policy-section" id="en-4">
-      <div class="section-header">
-        <span class="section-num">04 —</span>
-        <h2 class="section-title">Legal Basis for Processing</h2>
-      </div>
+      <div class="section-header"><span class="section-num">04 —</span><h2 class="section-title">Legal Basis for Processing</h2></div>
       <div class="section-body">
-        <p><strong>Consent</strong> — voluntarily completing the Lead Ads form constitutes your explicit consent. Consent may be withdrawn at any time without affecting the lawfulness of prior processing.</p>
-        <p><strong>Legitimate Interests</strong> — processing is necessary for the Company's legitimate commercial interests in developing business relationships with prospective B2B partners in the lubricants sector.</p>
-        <p><strong>Pre-Contractual Steps</strong> — processing is necessary to carry out steps requested by the data subject prior to entering into a supply agreement.</p>
+        <p><strong>Consent —</strong> Voluntarily completing the Lead Ads form constitutes your explicit consent to data processing. You may withdraw consent at any time without affecting the lawfulness of prior processing.</p>
+        <p><strong>Legitimate Interests —</strong> Processing is necessary for our legitimate commercial interests in developing business relationships with prospective B2B clients in the lubricants industry worldwide.</p>
+        <p><strong>Pre-Contractual Steps —</strong> Processing is necessary to carry out steps requested by you prior to entering into a supply agreement.</p>
       </div>
     </section>
 
     <section class="policy-section" id="en-5">
-      <div class="section-header">
-        <span class="section-num">05 —</span>
-        <h2 class="section-title">Third-Party Sharing</h2>
-      </div>
+      <div class="section-header"><span class="section-num">05 —</span><h2 class="section-title">Third-Party Sharing</h2></div>
       <div class="section-body">
-        <p>We do not sell, rent, or disclose your personal data to third parties, except: Meta Platforms (Facebook) for processing Lead Ads forms per Meta Business Terms; WhatsApp / Meta for message delivery via WhatsApp Business API; CRM provider under a Data Processing Agreement; and logistics partners for sample delivery (name and address only).</p>
+        <p>We do not sell, rent, or disclose your personal data to third parties, except as follows:</p>
+        <table class="data-table">
+          <thead><tr><th>Recipient</th><th>Purpose</th><th>Safeguards</th></tr></thead>
+          <tbody>
+            <tr><td>Meta Platforms (Facebook)</td><td>Processing Lead Ads forms per Meta Business Terms</td><td>Meta Business Tools Terms</td></tr>
+            <tr><td>WhatsApp / Meta</td><td>Message delivery via WhatsApp Business API</td><td>WhatsApp Privacy Policy</td></tr>
+            <tr><td>CRM Provider</td><td>Storage of client and deal data</td><td>Data Processing Agreement (DPA)</td></tr>
+            <tr><td>Logistics Partners</td><td>Sample shipment delivery (name and address only)</td><td>Minimum necessary data only</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
     <section class="policy-section" id="en-6">
-      <div class="section-header">
-        <span class="section-num">06 —</span>
-        <h2 class="section-title">Data Retention & Security</h2>
-      </div>
+      <div class="section-header"><span class="section-num">06 —</span><h2 class="section-title">Data Retention & Security</h2></div>
       <div class="section-body">
-        <p><strong>Retention:</strong> Personal data is retained for 3 years from the last interaction or until consent is withdrawn, whichever comes first. Data related to concluded supply contracts is retained for 5 years per applicable accounting and tax regulations.</p>
-        <p><strong>Security measures:</strong> SSL/TLS encryption in transit, role-based access control, regular security audits, and two-factor authentication for all personnel with access to personal data.</p>
+        <p><strong>Retention period:</strong> Personal data is retained for 3 years from the last interaction, or until consent is withdrawn — whichever comes first. Data related to concluded supply contracts is retained for 5 years in accordance with applicable accounting and tax regulations.</p>
+        <p><strong>Security measures:</strong> We apply SSL/TLS encryption for data in transit, role-based access control with minimum privilege principles, regular security audits, and two-factor authentication for all personnel with access to personal data.</p>
       </div>
     </section>
 
     <section class="policy-section" id="en-7">
-      <div class="section-header">
-        <span class="section-num">07 —</span>
-        <h2 class="section-title">Your Rights</h2>
-      </div>
+      <div class="section-header"><span class="section-num">07 —</span><h2 class="section-title">Your Rights</h2></div>
       <div class="section-body">
-        <p>You have the right to: access your personal data; rectification of inaccurate data; erasure ("right to be forgotten"); withdrawal of consent; restriction of processing; and data portability in a structured, machine-readable format. To exercise any right, contact us at the email in Section 8. Response time: within 30 business days.</p>
+        <table class="data-table">
+          <thead><tr><th>Right</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>Access</td><td>Obtain confirmation of processing and a copy of your personal data</td></tr>
+            <tr><td>Rectification</td><td>Request correction of inaccurate or outdated data</td></tr>
+            <tr><td>Erasure</td><td>Request deletion of your data ("right to be forgotten")</td></tr>
+            <tr><td>Withdraw Consent</td><td>Revoke consent at any time without affecting prior lawful processing</td></tr>
+            <tr><td>Restriction</td><td>Request limitation of processing in circumstances provided by law</td></tr>
+            <tr><td>Portability</td><td>Receive your data in a structured, machine-readable format</td></tr>
+          </tbody>
+        </table>
+        <p>To exercise any right, contact us at the email in Section 10. We will respond within 30 business days.</p>
       </div>
     </section>
 
     <section class="policy-section" id="en-8">
-      <div class="section-header">
-        <span class="section-num">08 —</span>
-        <h2 class="section-title">Contact Information</h2>
-      </div>
+      <div class="section-header"><span class="section-num">08 —</span><h2 class="section-title">WhatsApp & Messaging</h2></div>
       <div class="section-body">
-        <div class="contact-block">
-          <div class="contact-row"><div class="contact-label">Company</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
-          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
-          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 15339929300</div></div>
-          <div class="contact-row"><div class="contact-label">Telegram</div><div class="contact-value">@jinfu_lubrication</div></div>
-          <div class="contact-row"><div class="contact-label">Regions</div><div class="contact-value">KZ · UZ · TM · KG · TJ</div></div>
-        </div>
-        <p style="margin-top:1.5rem;">We reserve the right to update this Privacy Policy. Changes will be communicated by updating the date on this page and, where required, by direct notification.</p>
+        <p>When you click a "Contact on WhatsApp" button in our advertisement, you initiate a conversation via WhatsApp Business. The content of the conversation — including product inquiries, specifications, and commercial terms — is recorded and stored in WhatsApp Business and our CRM for the purpose of managing the business interaction.</p>
+        <div class="highlight-box"><p>We do not use WhatsApp conversation data for marketing broadcasts without your explicit consent. You may stop communications at any time by sending "STOP" or "UNSUBSCRIBE".</p></div>
       </div>
     </section>
 
+    <section class="policy-section" id="en-9">
+      <div class="section-header"><span class="section-num">09 —</span><h2 class="section-title">Facebook Pixel & Cookies</h2></div>
+      <div class="section-body">
+        <p>Our advertising materials may use the Facebook Pixel to track interactions (views, clicks, form submissions) for the purpose of optimizing ad campaigns and building Lookalike Audiences of potential B2B lubricant buyers globally.</p>
+        <p>You can manage your Facebook ad preferences via "Ad Settings" in your Facebook account. To opt out of interest-based advertising across the web, visit <strong>aboutads.info</strong> or <strong>youronlinechoices.com</strong>.</p>
+      </div>
+    </section>
+
+    <section class="policy-section" id="en-10">
+      <div class="section-header"><span class="section-num">10 —</span><h2 class="section-title">Contact Us</h2></div>
+      <div class="section-body">
+        <p>For any questions regarding this Privacy Policy or to exercise your data rights, please contact:</p>
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">Company</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
+          <div class="contact-row"><div class="contact-label">English</div><div class="contact-value">Shandong Jinfu Lubrication Technology Co., Ltd.</div></div>
+          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
+          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 15339929300</div></div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.85rem; color:var(--text-muted);">We reserve the right to update this Privacy Policy at any time. Changes will be reflected by updating this page.</p>
+      </div>
+    </section>
   </div>
   <!-- /EN -->
 
+  <!-- ========== CHINESE ========== -->
+  <div data-lang="zh">
+    <nav class="toc">
+      <div class="toc-title">目录</div>
+      <ul class="toc-list">
+        <li><a href="#zh-1" data-num="01">关于我们</a></li>
+        <li><a href="#zh-2" data-num="02">我们收集的数据</a></li>
+        <li><a href="#zh-3" data-num="03">数据使用目的</a></li>
+        <li><a href="#zh-4" data-num="04">法律依据</a></li>
+        <li><a href="#zh-5" data-num="05">第三方共享</a></li>
+        <li><a href="#zh-6" data-num="06">保留与安全</a></li>
+        <li><a href="#zh-7" data-num="07">您的权利</a></li>
+        <li><a href="#zh-8" data-num="08">联系我们</a></li>
+      </ul>
+    </nav>
+    <section class="policy-section" id="zh-1">
+      <div class="section-header"><span class="section-num">01 —</span><h2 class="section-title">关于我们</h2></div>
+      <div class="section-body">
+        <p><strong>山东金孚润滑科技有限公司</strong>（英文：Shandong Jinfu Lubrication Technology Co., Ltd.，以下简称"本公司"）是工业润滑油、发动机油、液压油、齿轮油及相关技术产品的生产商与出口商，面向全球B2B客户提供供应服务。</p>
+        <p>本隐私政策说明我们如何收集、使用和保护通过Facebook Lead Ads表单、WhatsApp Business及其他数字营销渠道提交的个人数据，适用于全球所有地区的广告投放。</p>
+        <div class="highlight-box"><p>通过填写广告询盘表单或点击WhatsApp联系按钮，即表示您同意本隐私政策的条款，并授权我们按照所述目的处理您的数据。</p></div>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-2">
+      <div class="section-header"><span class="section-num">02 —</span><h2 class="section-title">我们收集的数据</h2></div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead><tr><th>数据类别</th><th>示例</th><th>来源</th></tr></thead>
+          <tbody>
+            <tr><td>联系信息</td><td>姓名、职位、电话、WhatsApp、电子邮件</td><td>Lead Ads表单</td></tr>
+            <tr><td>公司信息</td><td>公司名称、国家、行业、车队/厂区规模</td><td>Lead Ads表单</td></tr>
+            <tr><td>商业信息</td><td>感兴趣的产品类别、采购量、采购频率</td><td>表单/沟通记录</td></tr>
+            <tr><td>技术数据</td><td>IP地址、设备类型、Facebook广告标识符</td><td>Facebook Pixel/自动收集</td></tr>
+            <tr><td>沟通记录</td><td>WhatsApp Business消息内容</td><td>WhatsApp Business</td></tr>
+          </tbody>
+        </table>
+        <p>我们不收集健康状况、政治观点、宗教信仰或生物特征等敏感个人数据。</p>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-3">
+      <div class="section-header"><span class="section-num">03 —</span><h2 class="section-title">数据使用目的</h2></div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead><tr><th>目的</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>处理询盘</td><td>回复润滑油产品采购需求，提供技术规格（API/ACEA认证等级、粘度、适用范围等）</td></tr>
+            <tr><td>提供报价</td><td>根据采购量、规格要求及贸易条款（FOB/CIP/DAP等）制定个性化报价</td></tr>
+            <tr><td>寄送样品</td><td>为潜在客户安排产品样品的国际寄送</td></tr>
+            <tr><td>CRM跟进</td><td>在客户管理系统中记录数据，支持后续沟通与合同签署</td></tr>
+            <tr><td>营销通讯</td><td>在您明确同意的前提下，发送产品更新、价格表及技术简报</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-4">
+      <div class="section-header"><span class="section-num">04 —</span><h2 class="section-title">数据处理的法律依据</h2></div>
+      <div class="section-body">
+        <p><strong>知情同意 —</strong> 自愿填写Lead Ads表单即构成您对数据处理的明确同意。您可随时撤回同意，但不影响撤回前处理行为的合法性。</p>
+        <p><strong>合法利益 —</strong> 数据处理是本公司在全球润滑油行业开展B2B业务合法商业利益所必需的。</p>
+        <p><strong>合同前行为 —</strong> 在签署供货合同前，根据您的请求采取必要处理步骤。</p>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-5">
+      <div class="section-header"><span class="section-num">05 —</span><h2 class="section-title">第三方数据共享</h2></div>
+      <div class="section-body">
+        <p>我们不出售、出租或向第三方披露您的个人数据，以下情况除外：Meta平台（Facebook）用于处理Lead Ads表单；WhatsApp/Meta用于消息传递；CRM服务商用于客户数据存储；物流合作伙伴仅获取样品寄送所需的姓名和地址信息。</p>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-6">
+      <div class="section-header"><span class="section-num">06 —</span><h2 class="section-title">数据保留与安全</h2></div>
+      <div class="section-body">
+        <p>个人数据自最后一次互动起保留3年，或直至撤回同意为止（以较早者为准）。与已签订供货合同相关的数据依据适用会计和税务法规保留5年。我们采用SSL/TLS加密、基于最小权限原则的访问控制及双因素身份验证等安全措施保护您的数据。</p>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-7">
+      <div class="section-header"><span class="section-num">07 —</span><h2 class="section-title">您的数据权利</h2></div>
+      <div class="section-body">
+        <p>您享有以下权利：访问权、更正权、删除权（"被遗忘权"）、撤回同意权、限制处理权及数据可携权。如需行使上述任何权利，请通过第8节联系方式与我们联系，我们将在30个工作日内答复。</p>
+      </div>
+    </section>
+    <section class="policy-section" id="zh-8">
+      <div class="section-header"><span class="section-num">08 —</span><h2 class="section-title">联系我们</h2></div>
+      <div class="section-body">
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">公司名称</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
+          <div class="contact-row"><div class="contact-label">电子邮件</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
+          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 15339929300</div></div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.85rem; color:var(--text-muted);">本公司保留随时更新本隐私政策的权利，更改内容将通过更新本页面予以反映。</p>
+      </div>
+    </section>
+  </div>
+  <!-- /ZH -->
+
+  <!-- ========== RUSSIAN ========== -->
+  <div data-lang="ru">
+    <nav class="toc">
+      <div class="toc-title">Содержание</div>
+      <ul class="toc-list">
+        <li><a href="#ru-1" data-num="01">О компании</a></li>
+        <li><a href="#ru-2" data-num="02">Собираемые данные</a></li>
+        <li><a href="#ru-3" data-num="03">Цели обработки</a></li>
+        <li><a href="#ru-4" data-num="04">Правовая основа</a></li>
+        <li><a href="#ru-5" data-num="05">Передача третьим лицам</a></li>
+        <li><a href="#ru-6" data-num="06">Хранение и безопасность</a></li>
+        <li><a href="#ru-7" data-num="07">Ваши права</a></li>
+        <li><a href="#ru-8" data-num="08">Контакты</a></li>
+      </ul>
+    </nav>
+    <section class="policy-section" id="ru-1">
+      <div class="section-header"><span class="section-num">01 —</span><h2 class="section-title">О компании</h2></div>
+      <div class="section-body">
+        <p><strong>山东金孚润滑科技有限公司</strong> (Shandong Jinfu Lubrication Technology Co., Ltd., далее — «Компания», «мы») — производитель и экспортёр промышленных смазочных материалов, моторных масел, гидравлических жидкостей, редукторных масел и сопутствующих технических продуктов для B2B-клиентов по всему миру.</p>
+        <p>Настоящая Политика конфиденциальности описывает порядок сбора, использования и защиты персональных данных, полученных через рекламные формы Facebook Lead Ads, WhatsApp Business и другие цифровые маркетинговые каналы — вне зависимости от страны показа рекламы.</p>
+        <div class="highlight-box"><p>Заполняя форму заявки или нажимая кнопку «Связаться в WhatsApp» в нашей рекламе, вы подтверждаете согласие с условиями настоящей политики и даёте согласие на обработку ваших данных в указанных целях.</p></div>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-2">
+      <div class="section-header"><span class="section-num">02 —</span><h2 class="section-title">Собираемые данные</h2></div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead><tr><th>Категория</th><th>Примеры</th><th>Источник</th></tr></thead>
+          <tbody>
+            <tr><td>Контактные данные</td><td>ФИО, должность, телефон, WhatsApp, email</td><td>Форма Lead Ads</td></tr>
+            <tr><td>Данные о компании</td><td>Название, страна, отрасль, размер парка/предприятия</td><td>Форма Lead Ads</td></tr>
+            <tr><td>Коммерческие данные</td><td>Интересующие продукты, объём закупок, периодичность</td><td>Форма / переписка</td></tr>
+            <tr><td>Технические данные</td><td>IP-адрес, тип устройства, ID рекламы Facebook</td><td>Facebook Pixel / авто</td></tr>
+            <tr><td>Данные переписки</td><td>Содержание сообщений в WhatsApp Business</td><td>WhatsApp Business</td></tr>
+          </tbody>
+        </table>
+        <p>Мы не собираем специальные категории данных: сведения о здоровье, политических взглядах, вероисповедании или биометрические данные.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-3">
+      <div class="section-header"><span class="section-num">03 —</span><h2 class="section-title">Цели обработки данных</h2></div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead><tr><th>Цель</th><th>Описание</th></tr></thead>
+          <tbody>
+            <tr><td>Обработка запроса</td><td>Ответ на запрос о поставке смазочных материалов, предоставление технических характеристик (API/ACEA, вязкость, применение)</td></tr>
+            <tr><td>Коммерческое предложение</td><td>Подготовка индивидуального предложения с учётом объёма и условий поставки (FOB, CIP, DAP)</td></tr>
+            <tr><td>Отправка образцов</td><td>Организация международной доставки образцов продукции</td></tr>
+            <tr><td>CRM и сопровождение сделки</td><td>Фиксация данных для дальнейшей коммуникации и заключения договора</td></tr>
+            <tr><td>Маркетинговые рассылки</td><td>Отправка прайс-листов и технических материалов — только с вашего явного согласия</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-4">
+      <div class="section-header"><span class="section-num">04 —</span><h2 class="section-title">Правовая основа обработки</h2></div>
+      <div class="section-body">
+        <p><strong>Согласие —</strong> добровольное заполнение формы Lead Ads является вашим явным согласием. Согласие может быть отозвано в любое время без ущерба для законности предшествующей обработки.</p>
+        <p><strong>Законный интерес —</strong> обработка необходима для реализации законных коммерческих интересов Компании в развитии глобального B2B-бизнеса.</p>
+        <p><strong>Преддоговорные действия —</strong> обработка данных по вашему запросу до заключения договора поставки.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-5">
+      <div class="section-header"><span class="section-num">05 —</span><h2 class="section-title">Передача данных третьим лицам</h2></div>
+      <div class="section-body">
+        <p>Мы не продаём и не раскрываем ваши данные третьим лицам, за исключением: Meta Platforms (Facebook) — обработка форм Lead Ads; WhatsApp/Meta — доставка сообщений; CRM-провайдер — хранение данных о сделках; логистические партнёры — только имя и адрес для доставки образцов.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-6">
+      <div class="section-header"><span class="section-num">06 —</span><h2 class="section-title">Хранение и безопасность данных</h2></div>
+      <div class="section-body">
+        <p>Персональные данные хранятся 3 года с момента последнего взаимодействия или до отзыва согласия (в зависимости от того, что наступит раньше). Данные по заключённым договорам хранятся 5 лет согласно требованиям законодательства. Применяются SSL/TLS шифрование, ролевое разграничение доступа и двухфакторная аутентификация.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-7">
+      <div class="section-header"><span class="section-num">07 —</span><h2 class="section-title">Ваши права</h2></div>
+      <div class="section-body">
+        <p>Вы имеете право на: доступ к своим данным, исправление неточных данных, удаление данных («право на забвение»), отзыв согласия, ограничение обработки и переносимость данных. Для реализации прав обратитесь по контактам в разделе 8. Срок ответа — не более 30 рабочих дней.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ru-8">
+      <div class="section-header"><span class="section-num">08 —</span><h2 class="section-title">Контактные данные</h2></div>
+      <div class="section-body">
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">Компания</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
+          <div class="contact-row"><div class="contact-label">Email</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
+          <div class="contact-row"><div class="contact-label">WhatsApp</div><div class="contact-value">+86 15339929300</div></div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.85rem; color:var(--text-muted);">Компания оставляет за собой право вносить изменения в настоящую Политику. Об изменениях сообщается путём обновления данной страницы.</p>
+      </div>
+    </section>
+  </div>
+  <!-- /RU -->
+
+  <!-- ========== ARABIC ========== -->
+  <div data-lang="ar" dir="rtl" style="font-family: 'Libre Baskerville', serif; direction: rtl; text-align: right;">
+    <nav class="toc">
+      <div class="toc-title">المحتويات</div>
+      <ul class="toc-list" style="direction:rtl;">
+        <li><a href="#ar-1" data-num="01">من نحن</a></li>
+        <li><a href="#ar-2" data-num="02">البيانات التي نجمعها</a></li>
+        <li><a href="#ar-3" data-num="03">أغراض المعالجة</a></li>
+        <li><a href="#ar-4" data-num="04">الأساس القانوني</a></li>
+        <li><a href="#ar-5" data-num="05">مشاركة الطرف الثالث</a></li>
+        <li><a href="#ar-6" data-num="06">الاحتفاظ والأمان</a></li>
+        <li><a href="#ar-7" data-num="07">حقوقك</a></li>
+        <li><a href="#ar-8" data-num="08">اتصل بنا</a></li>
+      </ul>
+    </nav>
+    <section class="policy-section" id="ar-1">
+      <div class="section-header"><span class="section-num">01 —</span><h2 class="section-title">من نحن</h2></div>
+      <div class="section-body">
+        <p><strong>شركة شاندونغ جينفو لتكنولوجيا التشحيم المحدودة</strong> (山东金孚润滑科技有限公司) هي شركة مصنّعة ومُصدِّرة لمواد التشحيم الصناعية وزيوت المحركات وسوائل الهيدروليك وزيوت التروس والمنتجات التقنية ذات الصلة، وتخدم عملاء B2B على مستوى العالم.</p>
+        <p>تصف سياسة الخصوصية هذه كيفية جمع البيانات الشخصية المقدَّمة عبر نماذج Facebook Lead Ads وWhatsApp Business وقنوات التسويق الرقمي الأخرى ومعالجتها وحمايتها — بصرف النظر عن الدولة أو المنطقة التي يُعرض فيها الإعلان.</p>
+        <div class="highlight-box"><p>بتقديم نموذج الاستفسار أو النقر على زر التواصل عبر واتساب في إعلاننا، فإنك تؤكد موافقتك على هذه السياسة وتمنحنا الإذن بمعالجة بياناتك للأغراض المذكورة.</p></div>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-2">
+      <div class="section-header"><span class="section-num">02 —</span><h2 class="section-title">البيانات التي نجمعها</h2></div>
+      <div class="section-body">
+        <table class="data-table">
+          <thead><tr><th>الفئة</th><th>أمثلة</th><th>المصدر</th></tr></thead>
+          <tbody>
+            <tr><td>بيانات الاتصال</td><td>الاسم الكامل، المسمى الوظيفي، الهاتف، واتساب، البريد الإلكتروني</td><td>نموذج Lead Ads</td></tr>
+            <tr><td>بيانات الشركة</td><td>اسم الشركة، الدولة، القطاع، حجم الأسطول/المصنع</td><td>نموذج Lead Ads</td></tr>
+            <tr><td>البيانات التجارية</td><td>فئات المنتجات المطلوبة، حجم الشراء، التكرار</td><td>النموذج / المراسلة</td></tr>
+            <tr><td>البيانات التقنية</td><td>عنوان IP، نوع الجهاز، معرف إعلان فيسبوك</td><td>Facebook Pixel / تلقائي</td></tr>
+            <tr><td>بيانات المراسلة</td><td>محتوى رسائل WhatsApp Business</td><td>WhatsApp Business</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-3">
+      <div class="section-header"><span class="section-num">03 —</span><h2 class="section-title">أغراض معالجة البيانات</h2></div>
+      <div class="section-body">
+        <p>تُعالَج بياناتك حصرياً للأغراض التالية: الرد على استفسارات توريد مواد التشحيم؛ تقديم عروض الأسعار المخصصة وفقاً للمواصفات وشروط التجارة (FOB/CIP/DAP)؛ تنظيم إرسال العينات؛ متابعة نظام إدارة العملاء؛ والتواصل التسويقي بموافقتك الصريحة فقط.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-4">
+      <div class="section-header"><span class="section-num">04 —</span><h2 class="section-title">الأساس القانوني للمعالجة</h2></div>
+      <div class="section-body">
+        <p><strong>الموافقة —</strong> يُعدّ تعبئة نموذج Lead Ads طوعاً موافقةً صريحة على المعالجة، ويمكن سحبها في أي وقت. <strong>المصالح المشروعة —</strong> المعالجة ضرورية لمصالحنا التجارية المشروعة في تطوير علاقات B2B عالمية. <strong>الخطوات التعاقدية المسبقة —</strong> المعالجة ضرورية للاستجابة لطلبك قبل إبرام عقد التوريد.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-5">
+      <div class="section-header"><span class="section-num">05 —</span><h2 class="section-title">مشاركة الطرف الثالث</h2></div>
+      <div class="section-body">
+        <p>لا نبيع بياناتك الشخصية ولا نكشف عنها لأطراف ثالثة، إلا في الحالات التالية: Meta Platforms (Facebook) لمعالجة نماذج Lead Ads؛ WhatsApp/Meta لتسليم الرسائل؛ مزود نظام CRM لتخزين بيانات العملاء؛ شركاء الشحن للحصول على الاسم والعنوان فقط لتسليم العينات.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-6">
+      <div class="section-header"><span class="section-num">06 —</span><h2 class="section-title">الاحتفاظ بالبيانات وأمانها</h2></div>
+      <div class="section-body">
+        <p>تُحتفظ بالبيانات الشخصية لمدة 3 سنوات من آخر تفاعل أو حتى سحب الموافقة، أيهما أقرب. تُحتفظ بالبيانات المتعلقة بعقود التوريد المبرمة لمدة 5 سنوات. نستخدم تشفير SSL/TLS والتحكم في الوصول المستند إلى الأدوار والمصادقة الثنائية لحماية بياناتك.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-7">
+      <div class="section-header"><span class="section-num">07 —</span><h2 class="section-title">حقوقك</h2></div>
+      <div class="section-body">
+        <p>تتمتع بالحقوق التالية: الوصول إلى بياناتك، تصحيح البيانات غير الدقيقة، حذف البيانات ("الحق في النسيان")، سحب الموافقة، تقييد المعالجة، وإمكانية نقل البيانات. للمطالبة بأي من هذه الحقوق، تواصل معنا عبر معلومات الاتصال في القسم 8. سيتم الرد خلال 30 يوم عمل.</p>
+      </div>
+    </section>
+    <section class="policy-section" id="ar-8">
+      <div class="section-header"><span class="section-num">08 —</span><h2 class="section-title">اتصل بنا</h2></div>
+      <div class="section-body">
+        <div class="contact-block">
+          <div class="contact-row"><div class="contact-label">الشركة</div><div class="contact-value">山东金孚润滑科技有限公司</div></div>
+          <div class="contact-row"><div class="contact-label">البريد</div><div class="contact-value">jinfulubrication@gmail.com</div></div>
+          <div class="contact-row"><div class="contact-label">واتساب</div><div class="contact-value">+86 15339929300</div></div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.85rem; color:var(--text-muted);">نحتفظ بحق تحديث سياسة الخصوصية هذه في أي وقت. ستنعكس أي تغييرات من خلال تحديث هذه الصفحة.</p>
+      </div>
+    </section>
+  </div>
+  <!-- /AR -->
+
   <footer class="site-footer">
-    <div class="footer-copy">© 2026 山东金孚润滑科技有限公司. All rights reserved.</div>
-    
+    <div class="footer-copy">© 山东金孚润滑科技有限公司 · Shandong Jinfu Lubrication Technology Co., Ltd. · jinfulubrication@gmail.com</div>
   </footer>
 
 </div>
@@ -1007,11 +554,10 @@
       el.classList.toggle('visible', el.dataset.lang === lang);
     });
     document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.textContent.toLowerCase().startsWith(lang));
+      btn.classList.toggle('active', btn.onclick.toString().includes("'" + lang + "'"));
     });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
-
 </body>
 </html>
